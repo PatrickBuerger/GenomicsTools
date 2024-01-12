@@ -6,7 +6,7 @@ output_file="your_output.fasta"
 scaffold_start="scaffoldXY"
 scaffold_end="scaffoldXY+1"
 
-## Awk command to extract a scaffold from a genome fasta file
+## Awk command to extract a scaffold / contig from a genome fasta file
 awk "/>${scaffold_start}/,/>${scaffold_end}/" "${genome_file}" > "${output_file}"
 
 ## Example
